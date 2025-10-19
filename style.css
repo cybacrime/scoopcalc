@@ -102,9 +102,13 @@ select:hover {
     background-color: var(--hover-color);
 }
 
+input {
+    height: 1.5rem;
+    padding: .5rem;
+}
+
 input[id="quantity"] {
     font-size: 1rem;
-    padding: .5rem;
     background-color: var(--button-color);
     border-radius: .5rem;
     border: 0;
@@ -113,7 +117,6 @@ input[id="quantity"] {
 
 input[id="copies"] {
     font-size: 1rem;
-    padding: .5rem;
     background-color: var(--button-color);
     border-radius: .5rem;
     border: 0;

@@ -16,7 +16,7 @@
                     <form name="priceCalc" action="">
                         <div class="subinput">
                             <div class="jobType">
-                                <select name="jobType" onchange="price();">
+                                <select name="jobType" onchange="subOutput();">
                                     <option value="1">Print</option>
                                     <option value="1">Xerox</option>
                                 </select>
@@ -28,7 +28,7 @@
                         <div class="subinput">
                             <div class="paperType">
                                 <div id="label"></div>
-                                <select name="paperType" onchange="price();">
+                                <select name="paperType" onchange="subOutput();">
                                     <option value="1">Regular</option>
                                     <option value="2">Photopaper</option>
                                 </select>
@@ -36,53 +36,60 @@
 
                             <div class="paperSize">
                                 <div id="label"></div>
-                                <select name="paperSize" onchange="price();">
+                                <select name="paperSize" onchange="subOutput();">
                                     <option value="1">Letter</option>
                                     <option value="1">Long</option>
                                     <option value="1">A4</option>
-                                    <option value="1">Customer-provided</option>
+                                    <option value="1">Customer</option>
                                 </select>
                             </div>
 
                             <div class="colorType">
                                 <div id="label"></div>
-                                <select name="colorType" onchange="price();">
+                                <select name="colorType" onchange="subOutput();">
                                     <option value="2">B&W</option>
                                     <option value="3">1/4</option>
                                     <option value="6">1/2</option>
                                     <option value="12">1/1</option>
                                 </select>
                             </div>
-
+                        </div>
+                        <div class="subinput">
                             <div class="pgQuantity">
                                 <div id="label"></div>
                             <input
+                                placeholder="0"
                                 type="number"
                                 id="quantity"
                                 name="quantity"
                                 min="1"
                                 max="500"
-                                onchange="price()"
-                                oninput="price()"
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                onchange="subOutput()"
+                                oninput="subOutput()"
                             >
                             </div>
 
                             <div class="copyQuantity">
                                 <div id="label"></div>
                             <input
+                                placeholder="0"
                                 type="number"
                                 id="copies"
                                 name="copies"
                                 min="1"
                                 max="500"
-                                onchange="price()"
-                                oninput="price()"
+                                pattern="[0-9]*"
+                                inputmode="numeric"
+                                onchange="subOutput()"
+                                oninput="subOutput()"
                             >
                             </div>
                         </div>
                     </form>
 
-                    <div class="suboutput" id="prices">
+                    <div class="suboutput" id="subOutputs">
                         subOutput
                     </div>
                 </div>
