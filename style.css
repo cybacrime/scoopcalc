@@ -15,9 +15,8 @@ body {
 .items {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
     margin: 10rem auto;
-    width: max(80%);
+    width: max(90%);
     flex-wrap: wrap;
 }
 
@@ -25,7 +24,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    width: max(100%);
     border-bottom: 1px solid rgb(221, 221, 221);
     flex-wrap: wrap;
 }
