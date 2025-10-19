@@ -1,0 +1,140 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --button-color: #f7f7f7;
+    --hover-color: #e9e9e9;
+    --select-margin: 0.5rem;
+}
+
+body {
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    font-family: Inter;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 10rem auto;
+    width: max(80%);
+    flex-wrap: wrap;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: max(100%);
+    border-bottom: 1px solid rgb(221, 221, 221);
+    flex-wrap: wrap;
+}
+
+.inputs {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.subinput {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+}
+
+.suboutput {
+    font-weight: 700;
+}
+
+.suboutput::before {
+    content: '₱';
+    font-weight: 300;
+}
+
+.select {
+    border: 1px solid red;
+}
+
+[id=label] {
+    font-size: .6rem;
+    font-weight: 800;
+    padding: 0.5rem 0 0.3rem 0;
+    letter-spacing: .03rem;
+}
+
+
+.jobType {
+    font-size: 1.5rem;
+}
+
+.paperType [id=label]::after {
+    content: "PAPER TYPE";
+}
+
+.paperSize [id=label]::after {
+    content: "SIZE";
+}
+
+.colorType [id=label]::after {
+    content: "COLOR";
+}
+
+.pgQuantity [id=label]::after {
+    content: "QUANTITY";
+}
+
+.copyQuantity [id=label]::after {
+    content: "COPIES";
+}
+
+
+
+select {
+    background-color: var(--button-color);
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 0;
+    font-size: 1rem;
+    margin: 0 var(--select-margin) 0 0;    
+}
+
+select:hover {
+    background-color: var(--hover-color);
+}
+
+input[id="quantity"] {
+    font-size: 1rem;
+    padding: .5rem;
+    background-color: var(--button-color);
+    border-radius: .5rem;
+    border: 0;
+    margin-right: var(--select-margin)
+}
+
+input[id="copies"] {
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 0;
+    margin-right: var(--select-margin)
+}
+
+input:hover {
+    background-color: var(--hover-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+form {
+    margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+}

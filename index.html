@@ -1,0 +1,91 @@
+<!doctype html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SCOOP CALC</title>
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="items">
+            <div class="item">
+                <div class="inputs">
+                    <form name="priceCalc" action="">
+                        <div class="subinput">
+                            <div class="jobType">
+                                <select name="jobType" onchange="price();">
+                                    <option value="1">Print</option>
+                                    <option value="1">Xerox</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="subinput">
+                            <div class="paperType">
+                                <div id="label"></div>
+                                <select name="paperType" onchange="price();">
+                                    <option value="1">Regular</option>
+                                    <option value="2">Photopaper</option>
+                                </select>
+                            </div>
+
+                            <div class="paperSize">
+                                <div id="label"></div>
+                                <select name="paperSize" onchange="price();">
+                                    <option value="1">Letter</option>
+                                    <option value="1">Long</option>
+                                    <option value="1">A4</option>
+                                    <option value="1">Customer-provided</option>
+                                </select>
+                            </div>
+
+                            <div class="colorType">
+                                <div id="label"></div>
+                                <select name="colorType" onchange="price();">
+                                    <option value="2">B&W</option>
+                                    <option value="3">1/4</option>
+                                    <option value="6">1/2</option>
+                                    <option value="12">1/1</option>
+                                </select>
+                            </div>
+
+                            <div class="pgQuantity">
+                                <div id="label"></div>
+                            <input
+                                type="number"
+                                id="quantity"
+                                name="quantity"
+                                min="1"
+                                max="500"
+                                onchange="price()"
+                                oninput="price()"
+                            >
+                            </div>
+
+                            <div class="copyQuantity">
+                                <div id="label"></div>
+                            <input
+                                type="number"
+                                id="copies"
+                                name="copies"
+                                min="1"
+                                max="500"
+                                onchange="price()"
+                                oninput="price()"
+                            >
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="suboutput" id="prices">
+                        subOutput
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </body>
+</html>
