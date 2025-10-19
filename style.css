@@ -10,6 +10,7 @@ body {
     font-size: 1rem;
     background-color: rgb(255, 255, 255);
     font-family: Inter;
+    color: black;
 }
 
 .items {
@@ -89,6 +90,7 @@ body {
 
 select {
     background-color: var(--button-color);
+    color: inherit;
     padding: .5rem;
     border-radius: .5rem;
     border: 0;
@@ -112,6 +114,7 @@ input[id="quantity"] {
 input[id="copies"] {
     font-size: 1rem;
     padding: .5rem;
+    background-color: var(--button-color);
     border-radius: .5rem;
     border: 0;
     margin-right: var(--select-margin)
